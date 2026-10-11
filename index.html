@@ -50,12 +50,6 @@
                 </div>
             </div>
             
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
-                <button onclick="showPage('home')" class="hover:text-emerald-600 transition">Home</button>
-                <button onclick="showPage('catalog')" class="hover:text-emerald-600 transition">Catalog</button>
-                <a href="#location" class="hover:text-emerald-600 transition">Visit Store</a>
-            </nav>
-
             <button onclick="showPage('catalog')" class="bg-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-emerald-700 transition shadow-sm">
                 View All Items
             </button>
@@ -67,7 +61,7 @@
         <!-- HERO SECTION -->
         <section class="max-w-6xl mx-auto px-4 pt-8 pb-6 text-center">
             <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full border border-emerald-200">
-                <i class="fas fa-shield-check text-emerald-600"></i> Trusted Store in Udaipura
+                <i class="fas fa-shield-alt text-emerald-600"></i> Trusted Store in Udaipura
             </span>
             <h2 class="text-3xl md:text-5xl font-black text-slate-900 mt-4 leading-tight">
                 Upgrade Your Home With Premier <br class="hidden md:block"/>
@@ -117,186 +111,122 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <!-- 1. Smart LED TVs -->
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center group">
-                    <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-110 transition">
-                        <i class="fas fa-tv text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-sm text-slate-900 mt-3">Smart LED TVs</h4>
-                    <p class="text-[11px] text-slate-500 mt-1">HD, 4K & Ultra HD</p>
+                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
+                    <i class="fas fa-tv text-3xl text-emerald-600 mb-2"></i>
+                    <h4 class="font-bold text-sm text-slate-900">Smart LED TVs</h4>
                 </div>
-
-                <!-- 2. Refrigerators -->
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center group">
-                    <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-110 transition">
-                        <i class="fas fa-snowflake text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-sm text-slate-900 mt-3">Refrigerators</h4>
-                    <p class="text-[11px] text-slate-500 mt-1">Single & Double Door</p>
+                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
+                    <i class="fas fa-snowflake text-3xl text-emerald-600 mb-2"></i>
+                    <h4 class="font-bold text-sm text-slate-900">Refrigerators</h4>
                 </div>
-
-                <!-- 3. Washing Machines -->
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center group">
-                    <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-110 transition">
-                        <i class="fas fa-soap text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-sm text-slate-900 mt-3">Washing Machines</h4>
-                    <p class="text-[11px] text-slate-500 mt-1">Semi & Fully Automatic</p>
+                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
+                    <i class="fas fa-soap text-3xl text-emerald-600 mb-2"></i>
+                    <h4 class="font-bold text-sm text-slate-900">Washing Machines</h4>
                 </div>
-
-                <!-- 4. Beds & Mattresses -->
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center group">
-                    <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-110 transition">
-                        <i class="fas fa-bed text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-sm text-slate-900 mt-3">Beds & Mattresses</h4>
-                    <p class="text-[11px] text-slate-500 mt-1">King, Queen & Single</p>
+                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
+                    <i class="fas fa-bed text-3xl text-emerald-600 mb-2"></i>
+                    <h4 class="font-bold text-sm text-slate-900">Beds & Mattresses</h4>
                 </div>
-
-                <!-- 5. Steel Almirahs -->
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center group">
-                    <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-110 transition">
-                        <i class="fas fa-box text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-sm text-slate-900 mt-3">Steel Almirahs</h4>
-                    <p class="text-[11px] text-slate-500 mt-1">Heavy-Duty Wardrobes</p>
+                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
+                    <i class="fas fa-box text-3xl text-emerald-600 mb-2"></i>
+                    <h4 class="font-bold text-sm text-slate-900">Steel Almirahs</h4>
                 </div>
-
-                <!-- 6. L-Shape Sofas -->
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center group">
-                    <div class="w-12 h-12 mx-auto bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 group-hover:scale-110 transition">
-                        <i class="fas fa-couch text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-sm text-slate-900 mt-3">Sofa Sets</h4>
-                    <p class="text-[11px] text-slate-500 mt-1">L-Shape & Premium Leatherette</p>
+                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
+                    <i class="fas fa-couch text-3xl text-emerald-600 mb-2"></i>
+                    <h4 class="font-bold text-sm text-slate-900">Sofa Sets</h4>
                 </div>
             </div>
 
-            <!-- AND MANY MORE BUTTON -->
             <div class="mt-6 text-center">
-                <button onclick="showPage('catalog')" class="w-full sm:w-auto bg-slate-900 text-white font-bold px-8 py-3.5 rounded-2xl hover:bg-slate-800 transition shadow-md flex items-center justify-center gap-2 mx-auto">
+                <button onclick="showPage('catalog')" class="w-full sm:w-auto bg-slate-900 text-white font-bold px-8 py-3.5 rounded-2xl shadow-md flex items-center justify-center gap-2 mx-auto">
                     <span>And Many More Items...</span>
                     <i class="fas fa-arrow-right text-emerald-400"></i>
                 </button>
             </div>
         </section>
 
-        <!-- STORE LOCATION CARD -->
+        <!-- STORE LOCATION -->
         <section id="location" class="max-w-6xl mx-auto px-4 py-8">
-            <div class="bg-white rounded-2xl border border-emerald-100 p-6 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                <div>
-                    <span class="text-xs font-bold text-emerald-600 tracking-wider uppercase">Store Location</span>
-                    <h3 class="text-xl font-black text-slate-900 mt-1">Sameer Enterprises</h3>
-                    <p class="text-sm text-slate-600 mt-1 max-w-md">
-                        Jawahar Chowk, In front of Post Office, Udaipura, Dist. Raisen, Madhya Pradesh
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-3 w-full md:w-auto">
-                    <a href="https://wa.me/919993190090" target="_blank" class="flex-1 md:flex-initial bg-emerald-600 text-white text-xs font-bold px-5 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-emerald-700 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> WhatsApp Us
+            <div class="bg-white rounded-2xl border border-emerald-100 p-6 shadow-sm">
+                <span class="text-xs font-bold text-emerald-600 tracking-wider uppercase">Store Location</span>
+                <h3 class="text-xl font-black text-slate-900 mt-1">Sameer Enterprises</h3>
+                <p class="text-sm text-slate-600 mt-1">
+                    Jawahar Chowk, In front of Post Office, Udaipura, Dist. Raisen, Madhya Pradesh
+                </p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://wa.me/919993190090" target="_blank" class="bg-emerald-600 text-white text-xs font-bold px-5 py-3 rounded-xl flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
                     </a>
-                    <a href="tel:9993190090" class="flex-1 md:flex-initial bg-slate-100 text-slate-800 text-xs font-bold px-5 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-slate-200 transition">
-                        <i class="fas fa-phone-alt text-sm"></i> Call Store
+                    <a href="tel:9993190090" class="bg-slate-100 text-slate-800 text-xs font-bold px-5 py-3 rounded-xl flex items-center gap-2">
+                        <i class="fas fa-phone-alt"></i> Call Store
                     </a>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- PAGE 2: CATALOG PAGE (HIDDEN BY DEFAULT) -->
+        <!-- PAGE 2: CATALOG PAGE -->
     <main id="catalog-page" class="flex-grow hidden max-w-6xl mx-auto px-4 py-8 w-full">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+        <div class="flex justify-between items-center mb-6">
             <div>
-                <button onclick="showPage('home')" class="text-xs font-bold text-emerald-600 hover:underline mb-2 flex items-center gap-1">
+                <button onclick="showPage('home')" class="text-xs font-bold text-emerald-600 mb-2 flex items-center gap-1">
                     <i class="fas fa-arrow-left"></i> Back to Home
                 </button>
                 <h2 class="text-2xl font-black text-slate-900">Complete Product Catalog</h2>
-                <p class="text-xs text-slate-500">Explore all items available in store</p>
-            </div>
-
-            <!-- SEARCH BAR -->
-            <div class="w-full md:w-72 relative">
-                <i class="fas fa-search absolute left-3.5 top-3 text-slate-400 text-xs"></i>
-                <input type="text" id="search-input" onkeyup="filterProducts()" placeholder="Search products..." class="w-full bg-white text-xs border border-slate-200 rounded-xl pl-9 pr-4 py-2.5 focus:outline-none focus:border-emerald-500 shadow-sm">
             </div>
         </div>
 
-        <!-- PRODUCTS GRID -->
-        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Dynamic products will be rendered here by JavaScript -->
-        </div>
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </main>
 
-    <!-- FOOTER -->
     <footer class="mt-auto bg-slate-900 text-slate-400 py-6 text-center text-xs">
-        <p class="font-medium">© 2026 Sameer Enterprises. All rights reserved.</p>
-        <p class="text-[10px] text-slate-500 mt-1">Jawahar Chowk, Udaipura, Raisen, M.P. | Phone: +91 9993190090</p>
+        <p>© 2026 Sameer Enterprises. All rights reserved.</p>
     </footer>
 
-    <!-- JAVASCRIPT FOR PAGE SWITCHING & DYNAMIC PRODUCTS -->
     <script>
         const products = [
-            { id: 1, name: 'Sony 55" 4K Ultra HD Smart LED TV', price: '₹45,000', category: 'Electronics', image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=600&q=80', desc: 'Dolby Audio, Android OS, Wi-Fi enabled.' },
-            { id: 2, name: 'Samsung 350L Double Door Refrigerator', price: '₹32,500', category: 'Appliances', image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=600&q=80', desc: 'Digital Inverter, Frost-free technology.' },
-            { id: 3, name: 'LG 10kg Fully Automatic Washing Machine', price: '₹24,900', category: 'Appliances', image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80', desc: 'Inverter Direct Drive, Smart ThinQ.' },
-            { id: 4, name: 'Royal Teak King Size Bed with Storage', price: '₹28,000', category: 'Furniture', image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80', desc: 'Solid wood build with hydraulic storage.' },
-            { id: 5, name: 'Modern 7-Seater L-Shape Sofa Set', price: '₹38,500', category: 'Furniture', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80', desc: 'High-density foam with premium fabric.' },
-            { id: 6, name: 'Heavy-Duty Double Door Steel Almirah', price: '₹14,500', category: 'Furniture', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80', desc: 'Tough steel construction with locker.' },
-            { id: 7, name: 'Induction Cooktop 2000W', price: '₹2,800', category: 'Appliances', image: 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80', desc: 'Preset Indian menu controls.' },
-            { id: 8, name: 'Crompton 25L Storage Water Geyser', price: '₹7,200', category: 'Appliances', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=600&q=80', desc: 'Glass-lined tank with rapid heating.' }
+            { name: 'Sony 55" 4K Ultra HD Smart LED TV', price: '₹45,000', category: 'Electronics', image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=600&q=80', desc: 'Dolby Audio, Android OS, Wi-Fi enabled.' },
+            { name: 'Samsung 350L Double Door Refrigerator', price: '₹32,500', category: 'Appliances', image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=600&q=80', desc: 'Digital Inverter, Frost-free technology.' },
+            { name: 'LG 10kg Fully Automatic Washing Machine', price: '₹24,900', category: 'Appliances', image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80', desc: 'Inverter Direct Drive, Smart ThinQ.' },
+            { name: 'Royal Teak King Size Bed with Storage', price: '₹28,000', category: 'Furniture', image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80', desc: 'Solid wood build with hydraulic storage.' },
+            { name: 'Modern 7-Seater L-Shape Sofa Set', price: '₹38,500', category: 'Furniture', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80', desc: 'High-density foam with premium fabric.' },
+            { name: 'Heavy-Duty Double Door Steel Almirah', price: '₹14,500', category: 'Furniture', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80', desc: 'Tough steel construction with locker.' }
         ];
 
         function showPage(page) {
-            const homePage = document.getElementById('home-page');
-            const catalogPage = document.getElementById('catalog-page');
-
             if (page === 'home') {
-                homePage.classList.remove('hidden');
-                catalogPage.classList.add('hidden');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.getElementById('home-page').classList.remove('hidden');
+                document.getElementById('catalog-page').classList.add('hidden');
             } else {
-                homePage.classList.add('hidden');
-                catalogPage.classList.remove('hidden');
-                renderProducts(products);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.getElementById('home-page').classList.add('hidden');
+                document.getElementById('catalog-page').classList.remove('hidden');
+                renderProducts();
             }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function renderProducts(items) {
+        function renderProducts() {
             const grid = document.getElementById('products-grid');
-            grid.innerHTML = items.map(p => `
+            grid.innerHTML = products.map(p => `
                 <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm flex flex-col">
-                    <img src="${p.image}" alt="${p.name}" class="w-full h-48 object-cover">
+                    <img src="${p.image}" class="w-full h-48 object-cover">
                     <div class="p-4 flex-grow flex flex-col justify-between">
                         <div>
                             <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full uppercase">${p.category}</span>
                             <h3 class="font-bold text-sm text-slate-900 mt-2">${p.name}</h3>
                             <p class="text-xs text-slate-500 mt-1">${p.desc}</p>
                             <div class="text-lg font-black text-slate-900 mt-2">${p.price}</div>
-                            
-                            <!-- MANDATORY DUAL DISCLAIMERS -->
                             <div class="mt-2 text-[10px] text-slate-400 space-y-0.5 bg-slate-50 p-2 rounded-lg">
                                 <p>* Prices could be different in store</p>
                                 <p>* Actual product could be different</p>
                             </div>
                         </div>
-
-                        <a href="https://wa.me/919993190090?text=Hi%20Sameer%20Enterprises,%20I%20am%20interested%20in%20inquiring%20about:%20${encodeURIComponent(p.name)}" 
-                           target="_blank" 
-                           class="mt-4 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition">
-                            <i class="fab fa-whatsapp text-sm"></i> Inquire on WhatsApp
+                        <a href="https://wa.me/919993190090?text=Hi%20Sameer%20Enterprises,%20I%20want%20to%20inquire%20about:%20${encodeURIComponent(p.name)}" target="_blank" class="mt-4 bg-emerald-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl text-center flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
                         </a>
                     </div>
                 </div>
             `).join('');
         }
-
-        function filterProducts() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const filtered = products.filter(p => p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query));
-            renderProducts(filtered);
-        }
     </script>
 </body>
-    </html>
-                    
+</html>
