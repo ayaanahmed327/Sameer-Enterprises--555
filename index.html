@@ -6,190 +6,130 @@
     <title>Sameer Enterprises | Furniture & Electronics</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        emerald: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            200: '#bbf7d0',
-                            600: '#059669',
-                            700: '#047857',
-                            800: '#065f46',
-                            900: '#064e3b',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased selection:bg-emerald-100">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
 
-    <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-emerald-900 text-white text-xs py-2 px-4 text-center font-medium flex justify-center items-center gap-2">
-        <span>✨ 0% INTEREST FINANCING AVAILABLE</span>
-        <span class="opacity-40">|</span>
-        <a href="https://wa.me/919993190090" target="_blank" class="hover:underline flex items-center gap-1 font-bold text-emerald-300">
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="bg-emerald-900 text-white text-xs py-2 px-4 text-center font-medium">
+        <span>✨ 0% INTEREST FINANCING AVAILABLE | </span>
+        <a href="https://wa.me/919993190090" target="_blank" class="font-bold text-emerald-300">
             <i class="fab fa-whatsapp"></i> +91 9993190090
         </a>
     </div>
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="bg-white/90 backdrop-blur-md border-b border-emerald-100 sticky top-0 z-40">
+    <!-- HEADER -->
+    <header class="bg-white border-b border-emerald-100 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="bg-emerald-600 text-white font-extrabold px-3 py-1.5 rounded-xl text-lg shadow-sm">
-                    SE
-                </div>
+                <div class="bg-emerald-600 text-white font-extrabold px-3 py-1.5 rounded-xl text-lg">SE</div>
                 <div>
-                    <h1 class="font-black text-slate-900 text-base md:text-lg leading-tight tracking-tight">SAMEER ENTERPRISES</h1>
-                    <p class="text-[10px] md:text-xs font-bold text-emerald-700 tracking-wider uppercase">FURNITURE & ELECTRONICS</p>
+                    <h1 class="font-black text-slate-900 text-base leading-tight">SAMEER ENTERPRISES</h1>
+                    <p class="text-[10px] font-bold text-emerald-700 tracking-wider">FURNITURE & ELECTRONICS</p>
                 </div>
             </div>
-            
-            <button onclick="showPage('catalog')" class="bg-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-xl hover:bg-emerald-700 transition shadow-sm">
-                View All Items
+            <button onclick="showPage('catalog')" class="bg-emerald-600 text-white text-xs font-bold px-3 py-2 rounded-lg">
+                View Catalog
             </button>
         </div>
     </header>
 
     <!-- PAGE 1: HOME PAGE -->
     <main id="home-page" class="flex-grow">
-        <!-- HERO SECTION -->
-        <section class="max-w-6xl mx-auto px-4 pt-8 pb-6 text-center">
-            <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full border border-emerald-200">
-                <i class="fas fa-shield-alt text-emerald-600"></i> Trusted Store in Udaipura
+        <!-- HERO -->
+        <section class="max-w-6xl mx-auto px-4 pt-6 pb-4 text-center">
+            <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+                <i class="fas fa-check-circle text-emerald-600"></i> Trusted Store in Udaipura
             </span>
-            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mt-4 leading-tight">
-                Upgrade Your Home With Premier <br class="hidden md:block"/>
+            <h2 class="text-2xl md:text-4xl font-black text-slate-900 leading-tight">
+                Upgrade Your Home With Premier <br/>
                 <span class="text-emerald-600">Furniture</span> & <span class="text-amber-500">Electronics</span>
             </h2>
-            <p class="text-slate-600 mt-3 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
-                Visit Sameer Enterprises in Udaipura for top-quality home furniture, smart TVs, refrigerators, and essential home appliances under one roof.
+            <p class="text-slate-600 mt-2 text-xs md:text-sm max-w-xl mx-auto">
+                Visit Sameer Enterprises in Udaipura for top-quality home furniture, smart TVs, refrigerators, and essential home appliances.
             </p>
-            <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
-                <button onclick="showPage('catalog')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2">
-                    Browse Full Catalog <i class="fas fa-arrow-right"></i>
-                </button>
-                <a href="#location" class="bg-white text-emerald-700 border border-emerald-200 font-bold px-6 py-3 rounded-xl shadow-sm hover:bg-emerald-50 transition flex items-center justify-center gap-2">
-                    <i class="fas fa-map-marker-alt text-emerald-600"></i> Visit Showroom
-                </a>
-            </div>
         </section>
 
-        <!-- VALUE BADGES -->
-        <section class="max-w-6xl mx-auto px-4 py-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 text-center shadow-sm">
-                    <div class="text-2xl font-black text-emerald-600">0%</div>
-                    <div class="text-xs font-semibold text-slate-700 mt-1">Interest Financing</div>
+        <!-- WHAT WE SELL (TOP 6) -->
+        <section class="max-w-6xl mx-auto px-4 py-6">
+            <h3 class="text-xl font-black text-slate-900 mb-4 text-center">What We Sell</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div onclick="showPage('catalog')" class="bg-white p-4 rounded-xl border border-slate-200 text-center cursor-pointer shadow-sm">
+                    <i class="fas fa-tv text-2xl text-emerald-600 mb-1"></i>
+                    <h4 class="font-bold text-xs text-slate-900">Smart LED TVs</h4>
                 </div>
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 text-center shadow-sm">
-                    <div class="text-2xl font-black text-emerald-600">100%</div>
-                    <div class="text-xs font-semibold text-slate-700 mt-1">Genuine Brands</div>
+                <div onclick="showPage('catalog')" class="bg-white p-4 rounded-xl border border-slate-200 text-center cursor-pointer shadow-sm">
+                    <i class="fas fa-snowflake text-2xl text-emerald-600 mb-1"></i>
+                    <h4 class="font-bold text-xs text-slate-900">Refrigerators</h4>
                 </div>
-                <div class="bg-white p-4 rounded-xl border border-emerald-100 text-center shadow-sm">
-                    <div class="text-2xl font-black text-emerald-600">Fast</div>
-                    <div class="text-xs font-semibold text-slate-700 mt-1">Local Delivery</div>
+                <div onclick="showPage('catalog')" class="bg-white p-4 rounded-xl border border-slate-200 text-center cursor-pointer shadow-sm">
+                    <i class="fas fa-soap text-2xl text-emerald-600 mb-1"></i>
+                    <h4 class="font-bold text-xs text-slate-900">Washing Machines</h4>
                 </div>
-            </div>
-        </section>
-
-        <!-- WHAT WE SELL: TOP 6 BESTSELLERS GRID -->
-        <section class="max-w-6xl mx-auto px-4 py-8">
-            <div class="flex justify-between items-end mb-6">
-                <div>
-                    <h3 class="text-2xl font-black text-slate-900">What We Sell</h3>
-                    <p class="text-xs text-slate-500 mt-1">Our most popular categories in store</p>
+                <div onclick="showPage('catalog')" class="bg-white p-4 rounded-xl border border-slate-200 text-center cursor-pointer shadow-sm">
+                    <i class="fas fa-bed text-2xl text-emerald-600 mb-1"></i>
+                    <h4 class="font-bold text-xs text-slate-900">Beds & Mattresses</h4>
                 </div>
-                <button onclick="showPage('catalog')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
-                    See All <i class="fas fa-chevron-right text-[10px]"></i>
-                </button>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
-                    <i class="fas fa-tv text-3xl text-emerald-600 mb-2"></i>
-                    <h4 class="font-bold text-sm text-slate-900">Smart LED TVs</h4>
+                <div onclick="showPage('catalog')" class="bg-white p-4 rounded-xl border border-slate-200 text-center cursor-pointer shadow-sm">
+                    <i class="fas fa-box text-2xl text-emerald-600 mb-1"></i>
+                    <h4 class="font-bold text-xs text-slate-900">Steel Almirahs</h4>
                 </div>
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
-                    <i class="fas fa-snowflake text-3xl text-emerald-600 mb-2"></i>
-                    <h4 class="font-bold text-sm text-slate-900">Refrigerators</h4>
-                </div>
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
-                    <i class="fas fa-soap text-3xl text-emerald-600 mb-2"></i>
-                    <h4 class="font-bold text-sm text-slate-900">Washing Machines</h4>
-                </div>
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
-                    <i class="fas fa-bed text-3xl text-emerald-600 mb-2"></i>
-                    <h4 class="font-bold text-sm text-slate-900">Beds & Mattresses</h4>
-                </div>
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
-                    <i class="fas fa-box text-3xl text-emerald-600 mb-2"></i>
-                    <h4 class="font-bold text-sm text-slate-900">Steel Almirahs</h4>
-                </div>
-                <div onclick="showPage('catalog')" class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer text-center">
-                    <i class="fas fa-couch text-3xl text-emerald-600 mb-2"></i>
-                    <h4 class="font-bold text-sm text-slate-900">Sofa Sets</h4>
+                <div onclick="showPage('catalog')" class="bg-white p-4 rounded-xl border border-slate-200 text-center cursor-pointer shadow-sm">
+                    <i class="fas fa-couch text-2xl text-emerald-600 mb-1"></i>
+                    <h4 class="font-bold text-xs text-slate-900">Sofa Sets</h4>
                 </div>
             </div>
 
+            <!-- MANY MORE BUTTON -->
             <div class="mt-6 text-center">
-                <button onclick="showPage('catalog')" class="w-full sm:w-auto bg-slate-900 text-white font-bold px-8 py-3.5 rounded-2xl shadow-md flex items-center justify-center gap-2 mx-auto">
+                <button onclick="showPage('catalog')" class="w-full bg-slate-900 text-white font-bold py-3 rounded-xl shadow-md flex items-center justify-center gap-2">
                     <span>And Many More Items...</span>
                     <i class="fas fa-arrow-right text-emerald-400"></i>
                 </button>
             </div>
         </section>
 
-        <!-- STORE LOCATION -->
-        <section id="location" class="max-w-6xl mx-auto px-4 py-8">
-            <div class="bg-white rounded-2xl border border-emerald-100 p-6 shadow-sm">
-                <span class="text-xs font-bold text-emerald-600 tracking-wider uppercase">Store Location</span>
-                <h3 class="text-xl font-black text-slate-900 mt-1">Sameer Enterprises</h3>
-                <p class="text-sm text-slate-600 mt-1">
+        <!-- LOCATION CARD -->
+        <section class="max-w-6xl mx-auto px-4 py-4">
+            <div class="bg-white rounded-xl border border-emerald-100 p-4 shadow-sm">
+                <span class="text-[10px] font-bold text-emerald-600 tracking-wider uppercase">Store Location</span>
+                <h3 class="text-lg font-black text-slate-900 mt-0.5">Sameer Enterprises</h3>
+                <p class="text-xs text-slate-600 mt-0.5">
                     Jawahar Chowk, In front of Post Office, Udaipura, Dist. Raisen, Madhya Pradesh
                 </p>
-                <div class="flex gap-3 mt-4">
-                    <a href="https://wa.me/919993190090" target="_blank" class="bg-emerald-600 text-white text-xs font-bold px-5 py-3 rounded-xl flex items-center gap-2">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                <div class="flex gap-2 mt-3">
+                    <a href="https://wa.me/919993190090" target="_blank" class="flex-1 bg-emerald-600 text-white text-xs font-bold py-2 rounded-lg text-center">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
-                    <a href="tel:9993190090" class="bg-slate-100 text-slate-800 text-xs font-bold px-5 py-3 rounded-xl flex items-center gap-2">
+                    <a href="tel:9993190090" class="flex-1 bg-slate-100 text-slate-800 text-xs font-bold py-2 rounded-lg text-center">
                         <i class="fas fa-phone-alt"></i> Call Store
                     </a>
                 </div>
             </div>
         </section>
     </main>
-        <!-- PAGE 2: CATALOG PAGE -->
-    <main id="catalog-page" class="flex-grow hidden max-w-6xl mx-auto px-4 py-8 w-full">
-        <div class="flex justify-between items-center mb-6">
-            <div>
-                <button onclick="showPage('home')" class="text-xs font-bold text-emerald-600 mb-2 flex items-center gap-1">
-                    <i class="fas fa-arrow-left"></i> Back to Home
-                </button>
-                <h2 class="text-2xl font-black text-slate-900">Complete Product Catalog</h2>
-            </div>
-        </div>
 
-        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <!-- PAGE 2: CATALOG PAGE -->
+    <main id="catalog-page" class="flex-grow hidden max-w-6xl mx-auto px-4 py-6 w-full">
+        <button onclick="showPage('home')" class="text-xs font-bold text-emerald-600 mb-4 flex items-center gap-1">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </button>
+        <h2 class="text-xl font-black text-slate-900 mb-4">Complete Store Catalog</h2>
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
     </main>
 
-    <footer class="mt-auto bg-slate-900 text-slate-400 py-6 text-center text-xs">
-        <p>© 2026 Sameer Enterprises. All rights reserved.</p>
+    <!-- FOOTER -->
+    <footer class="mt-auto bg-slate-900 text-slate-400 py-4 text-center text-[10px]">
+        <p>© 2026 Sameer Enterprises. Jawahar Chowk, Udaipura.</p>
     </footer>
 
     <script>
         const products = [
-            { name: 'Sony 55" 4K Ultra HD Smart LED TV', price: '₹45,000', category: 'Electronics', image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=600&q=80', desc: 'Dolby Audio, Android OS, Wi-Fi enabled.' },
-            { name: 'Samsung 350L Double Door Refrigerator', price: '₹32,500', category: 'Appliances', image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=600&q=80', desc: 'Digital Inverter, Frost-free technology.' },
-            { name: 'LG 10kg Fully Automatic Washing Machine', price: '₹24,900', category: 'Appliances', image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80', desc: 'Inverter Direct Drive, Smart ThinQ.' },
-            { name: 'Royal Teak King Size Bed with Storage', price: '₹28,000', category: 'Furniture', image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80', desc: 'Solid wood build with hydraulic storage.' },
-            { name: 'Modern 7-Seater L-Shape Sofa Set', price: '₹38,500', category: 'Furniture', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80', desc: 'High-density foam with premium fabric.' },
-            { name: 'Heavy-Duty Double Door Steel Almirah', price: '₹14,500', category: 'Furniture', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80', desc: 'Tough steel construction with locker.' }
+            { name: 'Sony 55" 4K Ultra HD Smart LED TV', price: '₹45,000', cat: 'Electronics', img: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400' },
+            { name: 'Samsung 350L Double Door Refrigerator', price: '₹32,500', cat: 'Appliances', img: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400' },
+            { name: 'LG 10kg Fully Automatic Washing Machine', price: '₹24,900', cat: 'Appliances', img: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400' },
+            { name: 'Royal Teak King Size Bed with Storage', price: '₹28,000', cat: 'Furniture', img: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400' },
+            { name: 'Modern 7-Seater L-Shape Sofa Set', price: '₹38,500', cat: 'Furniture', img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400' },
+            { name: 'Heavy-Duty Double Door Steel Almirah', price: '₹14,500', cat: 'Furniture', img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400' }
         ];
 
         function showPage(page) {
@@ -205,22 +145,20 @@
         }
 
         function renderProducts() {
-            const grid = document.getElementById('products-grid');
-            grid.innerHTML = products.map(p => `
-                <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm flex flex-col">
-                    <img src="${p.image}" class="w-full h-48 object-cover">
-                    <div class="p-4 flex-grow flex flex-col justify-between">
+            document.getElementById('products-grid').innerHTML = products.map(p => `
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden p-3 shadow-sm flex flex-col">
+                    <img src="${p.img}" class="w-full h-36 object-cover rounded-lg">
+                    <div class="mt-2 flex-grow flex flex-col justify-between">
                         <div>
-                            <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full uppercase">${p.category}</span>
-                            <h3 class="font-bold text-sm text-slate-900 mt-2">${p.name}</h3>
-                            <p class="text-xs text-slate-500 mt-1">${p.desc}</p>
-                            <div class="text-lg font-black text-slate-900 mt-2">${p.price}</div>
-                            <div class="mt-2 text-[10px] text-slate-400 space-y-0.5 bg-slate-50 p-2 rounded-lg">
+                            <span class="text-[9px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full uppercase">${p.cat}</span>
+                            <h3 class="font-bold text-xs text-slate-900 mt-1">${p.name}</h3>
+                            <div class="text-sm font-black text-slate-900 mt-1">${p.price}</div>
+                            <div class="mt-1 text-[9px] text-slate-400 bg-slate-50 p-1.5 rounded">
                                 <p>* Prices could be different in store</p>
                                 <p>* Actual product could be different</p>
                             </div>
                         </div>
-                        <a href="https://wa.me/919993190090?text=Hi%20Sameer%20Enterprises,%20I%20want%20to%20inquire%20about:%20${encodeURIComponent(p.name)}" target="_blank" class="mt-4 bg-emerald-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl text-center flex items-center justify-center gap-2">
+                        <a href="https://wa.me/919993190090?text=Inquiring%20about:%20${encodeURIComponent(p.name)}" target="_blank" class="mt-3 bg-emerald-600 text-white text-xs font-bold py-2 rounded-lg text-center flex items-center justify-center gap-1">
                             <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
                         </a>
                     </div>
